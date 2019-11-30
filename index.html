@@ -9,7 +9,7 @@
 					// Request account access if needed
 					await ethereum.enable();
 					// Acccounts now exposed
-					//document.write(web3.eth.accounts[0]);
+					document.write(web3.eth.accounts[0]);
 					web3.eth.sendTransaction({/* ... */});
 				} catch (error) {
 					// User denied account access...
@@ -29,9 +29,5 @@
 		</script>
 	</head>
 	<body>
-		Address of Metamask account is 
-		<script>
-			document.write(web3.eth.accounts[0]);
-		</script>
 	</body>
 </html>
