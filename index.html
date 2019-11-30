@@ -9,7 +9,9 @@
 					// Request account access if needed
 					await ethereum.enable();
 					// Acccounts now exposed
-					document.write(web3.eth.accounts[0]);
+					var address = web3.eth.accounts[0];
+					var axieUrl = "https://axieinfinity.com/api/v2/addresses/" + address + "/axies";
+					document.write(axieUrl);
 					web3.eth.sendTransaction({/* ... */});
 				} catch (error) {
 					// User denied account access...
