@@ -1,5 +1,5 @@
 <html>
-	<body>
+	<head>
 		<script>
 			window.addEventListener('load', async () => {
 			// Modern dapp browsers...
@@ -9,7 +9,7 @@
 					// Request account access if needed
 					await ethereum.enable();
 					// Acccounts now exposed
-					var ethAddress = web3.eth.accounts[0];
+					var ethaddy = web3.eth.accounts[0];
 					web3.eth.sendTransaction({/* ... */});
 				} catch (error) {
 					// User denied account access...
@@ -27,8 +27,8 @@
 			}
 		});
 		</script>
-		
-		Address of Metamask account is <script>document.write(ethAddress)</script>
-
+	<head>
+	<body>
+		Address of Metamask account is <script>document.write(ethaddy)</script>
 	</body>
 </html>
