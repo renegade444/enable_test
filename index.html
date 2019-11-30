@@ -9,7 +9,7 @@
 					// Request account access if needed
 					await ethereum.enable();
 					// Acccounts now exposed
-					web3.eth.getAccounts().then(console.log);
+					var accountAddress = web3.eth.getAccounts();
 					web3.eth.sendTransaction({/* ... */});
 				} catch (error) {
 					// User denied account access...
@@ -27,5 +27,7 @@
 			}
 		});
 		</script>
+		
+		Address: {accountAddress}
 	</body>
 </html>
